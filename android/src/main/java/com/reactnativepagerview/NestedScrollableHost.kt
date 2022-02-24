@@ -65,7 +65,7 @@ class NestedScrollableHost : FrameLayout {
 
     int counter = ev.getPointerCount()
 
-    if(counter == parentViewPager?.numGestures ?: 1) {
+    if(counter == parentViewPager?.numPointer ?: 1) {
       if (e.action == MotionEvent.ACTION_DOWN) {
         initialX = e.x
         initialY = e.y
