@@ -194,11 +194,6 @@ class PagerViewViewManager : ViewGroupManager<NestedScrollableHost>() {
     }
   }
 
-  @ReactProp(name = "numPointers")
-  fun setNumPointers(host: NestedScrollableHost, value: Number) {
-    getViewPager(host).numPointers = value
-  }
-
   override fun getExportedCustomDirectEventTypeConstants(): MutableMap<String, Map<String, String>> {
     return MapBuilder.of(
       PageScrollEvent.EVENT_NAME, MapBuilder.of("registrationName", "onPageScroll"),
